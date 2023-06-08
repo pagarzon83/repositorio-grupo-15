@@ -1,0 +1,13 @@
+﻿table, th, tr {
+    border: 0.001px solid black;
+    margin: 19px;
+    width: 100rem;
+}
+
+th {
+    color: #000000;
+}
+
+tr {
+    color: #000000;
+}

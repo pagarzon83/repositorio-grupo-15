@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/generastyl.css" />
+    <link rel="stylesheet" href="css/styleform.css" />
+    <script src="https://kit.fontawesome.com/548fecdbb4.js" crossorigin="anonymous"></script>
+    <title>formmed</title>
+</head>
+<body>
+
+    <div class="selector">
+        <header>
+            <img src="img/imagen centro medico.png" class="centromed" />
+            <nav>
+                <a href="pagina priniopal.html"><i class="fa-solid fa-house"></i> inicio</a>
+                <a href="formulariocita.html"><i class="fa-solid fa-light fa-pen-to-square"></i> Datos cita medica requerida </a>
+                <a href="formularimedicos.html"><i class="fa-solid fa-light fa-pen-to-square"></i> Datos informacion medicos </a>
+                <a href="pagtablacitas.html"><i class="fa-solid fa-light fa-file"></i> Tabla de datos citas</a>
+                <a href="pagdatosmedicos.html"><i class="fa-solid fa-light fa-file"></i> Tabla de datos de medicos</a>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="formcita">
+            <form id="registro-med">
+                <fieldset>
+                    <legend>Datos Medicos</legend>
+                    <label for="nopmbremed">NOMBRES <span>*</span></label>
+                    <input class="regis" type="text" id="nombremed" autofocus placeholder="nombre o nombres" required />
+                    <label for="apellidosmed">APELLIDOS <span>*</span></label>
+                    <input class="regis" type="text" id="apellidosmed" autofocus placeholder="apellidos" required />
+                    <label for="cedulamed">CEDULA <span>*</span></label>
+                    <input class="regis" type="tel" id="cedulamed" autofocus placeholder="cedula" required />
+                    <br />
+                    <select id="especialidadmed" name="especialidad" required>
+                        <option value="esopacio">--------ESPECIALIDAD * --------- </option>
+                        <option value="Medicinageneral">Medicina general </option>
+                        <option value="Cardiología"> Cardiología</option>
+                        <option value="Medicinainterna"> Medicina interna</option>
+                        <option value="Dermatología">Dermatología </option>
+                        <option value="Rehabilitaciónfísica">Rehabilitación física </option>
+                        <option value="Psicología"> Psicología</option>
+                        <option value="Odontología"> Odontología</option>
+                        <option value="Radiología">Radiología </option>
+                    </select>
+                    <br />
+
+                    <br />
+                    <select id="consultorio" name="consultorio" required>
+                        <option value="esopacio">--------CONSULTORIO *-------- </option>
+                        <option value="c101">c101 </option>
+                        <option value="c102"> c102</option>
+                        <option value="c103"> c103</option>
+                        <option value="c104">c104 </option>
+                        <option value="c105">c105 </option>
+                        <option value="c201">c201 </option>
+                        <option value="c202">c202 </option>
+                        <option value="c203"> c203</option>
+                        <option value="c204"> c204</option>
+                        <option value="c205"> c205</option>
+                        <option value="c301"> c301</option>
+                        <option value="c302">c302 </option>
+                        <option value="c303">c303 </option>
+                        <option value="c304"> c304</option>
+                        <option value="c305"> c305</option>
+                    </select>
+                    <br />
+                    <label for="email">EMAIL <span>*</span></label>
+                    <input class="regis" type="email" id="email" autofocus placeholder="email" required />
+                    <input class="botton" type="submit" value="Enviar" required />
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+    <script src="js/registromed.js"></script>
+</body>
+</html>

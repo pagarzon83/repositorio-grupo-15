@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/generastyl.css" />
+    <link rel="stylesheet" href="css/styleform.css" />
+    <script src="https://kit.fontawesome.com/548fecdbb4.js" crossorigin="anonymous"></script>
+    <title>formcitas</title>
+</head>
+<body>
+    <div class="selector">
+        <header>
+            <img src="img/imagen centro medico.png" class="centromed" />
+            <nav>
+                <a href="pagina priniopal.html"><i class="fa-solid fa-house"></i> inicio</a>
+                <a href="formulariocita.html"><i class="fa-solid fa-light fa-pen-to-square"></i> Datos cita medica requerida </a>
+                <a href="formularimedicos.html"><i class="fa-solid fa-light fa-pen-to-square"></i> Datos informacion medicos </a>
+                <a href="pagtablacitas.html"><i class="fa-solid fa-light fa-file"></i> Tabla de datos citas</a>
+                <a href="pagdatosmedicos.html"><i class="fa-solid fa-light fa-file"></i> Tabla de datos de medicos</a>
+
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="formcita">
+            <form id="datos-pacientes">
+                <fieldset>
+                    <legend>Datos Citas Medicas</legend>
+                    <label for="nombre">NOMBRE <span>*</span></label>
+                    <input class="regis" type="text" id="nombre" autofocus placeholder="nombre" required>
+                    <br />
+                    <label for="apellidos">APELLIDOS <span>*</span></label>
+                    <input class="regis" type="text" id="apellidos" autofocus placeholder="primer Apellido" required>
+                    <br />
+                    <label for="cedula">CEDULA <span>*</span></label>
+                    <input class="regis" type="tel" id="cedula" placeholder="cedula" required />
+                    <label for="edad">EDAD <span>*</span></label>
+                    <input class="regis" type="number" id="edad" autofocus placeholder="edad" required />
+                    <label for="telefono">TELEFONO <span>*</span></label>
+                    <input class="regis" type="tel" id="telefono" autofocus placeholder="telefono" required />
+
+                    <select id="especialidad" name="especialidad">
+                        <option value="esopacio">----------------------ESPECIALIDAD REQUERIDA --------------------- </option>
+                        <option value="Medicinageneral">Medicina general </option>
+                        <option value="Cardiología"> Cardiología</option>
+                        <option value="Medicinainterna"> Medicina interna</option>
+                        <option value="Dermatología">Dermatología </option>
+                        <option value="Rehabilitaciónfísica">Rehabilitación física </option>
+                        <option value="Psicología"> Psicología</option>
+                        <option value="Odontología"> Odontología</option>
+                        <option value="Radiología">Radiología </option>
+
+                    </select>
+                    <br />
+                    <input class="botton" type="submit" value="Enviar" required />
+                </fieldset>
+            </form>
+
+        </div>
+    </main>
+    <script src="js/registrocita.js"></script>
+
+</body>
+</html>
